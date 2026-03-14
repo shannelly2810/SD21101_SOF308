@@ -1,11 +1,20 @@
     const allLabs = {
         'lab01': {
-            name: "Lab 01: Introduction",
+            name: "Lab 01: Introduction to Bootstrap",
             exercises: [
                 { id: 1, desc: "Organize basic layout using Bootstrap", url: "PS44042_LABS_1/bai1.html" },
                 { id: 2, desc: "Create Navbar using Bootstrap", url: "PS44042_LABS_1/bai2.html" },
                 { id: 3, desc: "Create aside using Bootstrap", url: "PS44042_LABS_1/bai3.html" },
                 { id: 4, desc: "Create web display as described using Bootstrap", url: "PS44042_LABS_1/bai4.html"}
+            ]
+        },
+        'lab02': {
+            name: "Lab 02: Introduction to basic Tables | Forms | dynamic tabs and modal",
+            exercises: [
+                { id: 1, desc: "Create table using Bootstrap", url: "PS44042_LABS_2/bai1.html" },
+                { id: 2, desc: "Create register/login forms using Bootstrap", url: "PS44042_LABS_2/bai2.html" },
+                { id: 3, desc: "Create a dynamic tab for both register/login forms using Bootstrap", url: "PS44042_LABS_2/bai3.html" },
+                { id: 4, desc: "Create a modal for the dynamic tab using Bootstrap", url: "PS44042_LABS_2/bai4.html"}
             ]
         }
     };
