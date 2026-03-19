@@ -16,6 +16,15 @@
                 { id: 3, desc: "Create a dynamic tab for both register/login forms using Bootstrap", url: "PS44042_LABS_2/bai3.html" },
                 { id: 4, desc: "Create a modal for the dynamic tab using Bootstrap", url: "PS44042_LABS_2/bai4.html"}
             ]
+        },
+            'lab03': {
+            name: "Lab 03: Responsive Web Design with Bootstrap 5",
+            exercises: [
+                { id: 1, desc: "Navigation & Branding", url: "PS44042_LABS_3/bai1.html" },
+                { id: 2, desc: "Content Grid (Post List)", url: "PS44042_LABS_3/bai2.html" },
+                { id: 3, desc: "Interactive UI Components", url: "PS44042_LABS_3/bai3.html" },
+                { id: 4, desc: "Post Detail Layout", url: "PS44042_LABS_3/bai4.html"}
+            ]
         }
     };
 
