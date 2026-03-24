@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <title>30 - PS44042 - Login</title>
+    <style scoped>
+        :root {
+            --tangerine: #f17e45;
+            --gray: #dcdbdb;
+        }
+
+        body,
+        input,
+        button,
+        select,
+        textarea,
+        .nav-link,
+        label {
+            font-family: var(--bs-font-monospace) !important;
+        }
+
+        ::placeholder {
+            opacity: 0.4 !important;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .custom-underline {
+            text-decoration: underline;
+            text-underline-offset: 12px;
+            text-decoration-thickness: 2px;
+        }
+
+        .flex-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--gray-bg);
+        }
+
+        .nav-tabs .nav-link:hover {
+            color: var(--tangerine);
+            border-color: transparent transparent var(--tangerine);
+        }
+
+        .nav-tabs .nav-link:active {
+            color: #e67e22 !important;
+            border-bottom: 3px solid #e67e22 !important;
+            background: none;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="flex-wrapper">
+
+        <nav class="navbar navbar-expand-sm py-0 navbar-light bg-white border-bottom shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/fpt_Polytechnic_Logo.svg" alt="Logo" style="width: 100px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav me-auto text-uppercase small fw-bold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Login.html"><i class="fa-solid fa-list me-1"></i>Login</a>
+                        </li>
+                        <li class="nav-item d-none d-sm-flex align-items-center">
+                            <span class="text-muted px-2">|</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-info" href="About.html"><i class="fa-solid fa-film me-1"></i>About
+                                us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid p-0 mt-4 flex-grow-1">
+            <div class="row justify-content-center g-0">
+                <article class="col-12 col-md-8 col-lg-6 p-4">
+                    <h2 class="text-warning text-center font-monospace mb-4 custom-underline">30-PS44042-SOF308</h2>
+                    <div class="card shadow-sm border-0 rounded-3 overflow-hidden">
+                        <div class="card-header bg-white p-0 border-bottom-0">
+                            <ul class="nav nav-tabs nav-fill" id="authTabs" role="tablist">
+                                <li class="nav-item">
+                                    <button class="nav-link active py-3 fw-bold font-monospace" data-bs-toggle="tab"
+                                        data-bs-target="#login">Sign In</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button class="nav-link py-3 fw-bold font-monospace" data-bs-toggle="tab"
+                                        data-bs-target="#register">Sign Up</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-body p-4">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="login">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold small font-monospace">Email or
+                                                Username</label>
+                                            <input type="email" class="form-control form-control-lg"
+                                                placeholder="Email/Username..." required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold small font-monospace">Password</label>
+                                            <input type="password" class="form-control form-control-lg"
+                                                placeholder="••••••••" required>
+                                        </div>
+                                        <button type="submit"
+                                            class="btn btn-info w-100 fw-bold text-white py-2 font-monospace">Login</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="register">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold small">Full Name</label>
+                                            <input type="text" class="form-control" placeholder="e.g., John Smith"
+                                                required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold small">Email Address</label>
+                                            <input type="email" class="form-control" placeholder="username@poly.edu.vn"
+                                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                                title="Please enter a valid email (e.g., name@example.com)" required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold small">Password</label>
+                                            <input type="password" class="form-control" placeholder="Aa123456..."
+                                                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+                                                title="At least 8 characters, including uppercase, lowercase, and a number."
+                                                required>
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label fw-bold small">Confirm Password</label>
+                                            <input type="password" class="form-control" placeholder="Re-enter password"
+                                                required>
+                                        </div>
+
+                                        <button type="submit"
+                                            class="btn btn-outline-info w-100 fw-bold py-2 mt-2">Create
+                                            Account</button>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-4 mb-5">
+                                <a href="index.html" class="text-decoration-none small text-muted">
+                                    <i class="fa-solid fa-arrow-left me-1"></i> Back to Home
+                                </a>
+                            </div>
+                </article>
+            </div>
+        </div>
+
+        <footer class="text-white text-center py-3 bg-dark mt-auto">
+            <div class="container small opacity-75">
+                &copy; 2026 Developed by <span class="text-warning fw-bold">Toya</span> for Educational Purposes.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
