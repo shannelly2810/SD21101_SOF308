@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyBlog/Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .blog-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #333;
+        }
+        
+        .featured-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #444;
+        }
+        
+        .blog-title {
+            color: #e2791c;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        
+        .blog-meta {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+        }
+        
+        .blog-content {
+            font-size: 1.1rem;
+            color: #636363;
+            text-align: justify;
+        }
+        
+        .btn-back {
+            margin-top: 30px;
+        }
+        
+        .comment-avatar {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+        
+        .comment-bubble {
+            background-color: #f0f2f5;
+            border-radius: 18px;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        
+        .comment-action {
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #65676b;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        
+        .comment-action:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="blog-container shadow-lg">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Blog Header" class="featured-image">
+
+        <h1 class="blog-title">Exploring Java Servlet Filters</h1>
+
+        <div class="blog-meta">
+            <span>By <strong>Toya</strong></span> •
+            <span>March 27, 2026</span> •
+        </div>
+
+        <div class="blog-content">
+            <p>
+                Building a high-quality web application requires more than just code; it requires a deep understanding of the "Nesting Doll" architecture. By keeping your UI components organized—such as placing forms inside tabs and tabs inside modals—you create a seamless
+                experience for the user. In this guide, we explore how Bootstrap 5 utilities like flexbox and custom dark-theme CSS can transform a simple student project into a professional-looking platform like PolyTube.
+            </p>
+            <p>
+                Consistency is key. Whether you are styling placeholders to be white or ensuring your login buttons sit perfectly on the right side of the navbar, these small details define the overall quality of your work.
+            </p>
+        </div>
+        <div class="card border-0 shadow-sm mt-4">
+            <div class="card-body">
+                <h5 class="fw-bold mb-4"><i class="fa-solid fa-comments me-2 text-primary"></i>Comments</h5>
+
+                <div class="d-flex gap-3 mb-4">
+                    <img src="assets/images/Image_110120251030.webp" class="comment-avatar shadow-sm" alt="MyAvatar">
+                    <div class="flex-grow-1">
+                        <form action="comment-controller" method="post">
+                            <div class="input-group">
+                                <textarea class="form-control border-0 bg-light" rows="4" placeholder="Write a comment..." style="border-radius: 20px;"></textarea>
+                                <button class="btn btn-link text-primary" type="submit">
+                            <i class="fa-solid fa-paper-plane fs-5"></i>
+                        </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <hr class="text-muted opacity-25">
+
+                <div class="comment-list">
+
+                    <div class="d-flex gap-3 mb-3">
+                        <img src="https://ui-avatars.com/api/?name=User+One&background=random" class="comment-avatar" alt="UserAvatar">
+                        <div class="flex-grow-1">
+                            <div class="comment-bubble shadow-sm">
+                                <h6 class="mb-1 fw-bold small">User One</h6>
+                                <p class="mb-0 small">Great post, Toya! This Java Servlet explanation is really helpful for our upcoming Lab 3. Keep it up!</p>
+                            </div>
+                            <div class="mt-1 ms-2">
+                                <a href="#" class="comment-action">Like</a>
+                                <a href="#" class="comment-action">Reply</a>
+                                <span class="text-muted small">2 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-3 ms-5">
+                        <img src="assets/images/Image_110120251030.webp" class="comment-avatar" alt="AdminAvatar">
+                        <div class="flex-grow-1">
+                            <div class="comment-bubble shadow-sm border-start border-primary border-4">
+                                <h6 class="mb-1 fw-bold small text-primary">Tấn Phát (Admin)</h6>
+                                <p class="mb-0 small">Thanks! I'll be posting the Filter source code tomorrow morning.</p>
+                            </div>
+                            <div class="mt-1 ms-2">
+                                <a href="#" class="comment-action">Like</a>
+                                <span class="text-muted small">Just now</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <a href="index.html" class="btn btn-outline-danger btn-sm rounded-pill px-4 btn-back">
+                &larr; Back to Home
+            </a>
+    </article>
+</body>
+
+</html>
