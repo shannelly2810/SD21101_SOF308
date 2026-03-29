@@ -34,6 +34,15 @@ const allLabs = {
             { id: 3, desc: "Interactive Greetings", url: "http://localhost:5173/", target: "#ex3" },
             { id: 4, desc: "Health Knowledge Portal", url: "http://localhost:5173/", target: "#ex4" }
         ]
+    },
+    'lab05': {
+        name: "Lab 04: A deep dive into VueJS fundamentals",
+        exercises: [
+            { id: 1, desc: "Event Handling and dynamic message updates using Vue's ref reactivity", url: "http://localhost:5174/", target: "#ex1" },
+            { id: 2, desc: "Two-way Data Binding with v-model", url: "http://localhost:5174/", target: "#ex2" },
+            { id: 3, desc: "Building a reactive Personal Information Form", url: "http://localhost:5174/", target: "#ex3" },
+            { id: 4, desc: "Developing a Mini Blog Application", url: "http://localhost:5174/", target: "#ex4" }
+        ]
     }
 };
 

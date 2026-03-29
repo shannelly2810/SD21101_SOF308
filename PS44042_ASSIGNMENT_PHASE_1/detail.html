@@ -4,171 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PolyBlog/Detail</title>
+    <title>PolyBlog/Blog/Detail</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-        }
-        
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #f0f2f5;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        .blog-container {
-            max-width: 800px;
-            margin: 50px auto;
-            background-color: rgba(255, 255, 255, 0.05);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid #333;
-        }
-        
-        .featured-image {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-            border-radius: 12px;
-            margin-bottom: 25px;
-            border: 1px solid #444;
-        }
-        
-        .blog-title {
-            color: #e2791c;
-            font-weight: 800;
-            margin-bottom: 15px;
-        }
-        
-        .blog-meta {
-            font-size: 0.9rem;
-            color: #888;
-            margin-bottom: 25px;
-            border-bottom: 1px solid #333;
-            padding-bottom: 15px;
-        }
-        
-        .blog-content {
-            font-size: 1.1rem;
-            color: #636363;
-            text-align: justify;
-        }
-        
-        .btn-back {
-            margin-top: 30px;
-        }
-        
-        .comment-avatar {
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-            border-radius: 50%;
-        }
-        
-        .comment-bubble {
-            background-color: #f0f2f5;
-            border-radius: 18px;
-            padding: 10px 15px;
-            display: inline-block;
-        }
-        
-        .comment-action {
-            font-size: 0.8rem;
-            font-weight: bold;
-            color: #65676b;
-            text-decoration: none;
-            margin-right: 15px;
-        }
-        
-        .comment-action:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/detail.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
-    <article class="blog-container shadow-lg">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Blog Header" class="featured-image">
-
-        <h1 class="blog-title">Exploring Java Servlet Filters</h1>
-
-        <div class="blog-meta">
-            <span>By <strong>Toya</strong></span> •
-            <span>March 27, 2026</span> •
-        </div>
-
-        <div class="blog-content">
-            <p>
-                Building a high-quality web application requires more than just code; it requires a deep understanding of the "Nesting Doll" architecture. By keeping your UI components organized—such as placing forms inside tabs and tabs inside modals—you create a seamless
-                experience for the user. In this guide, we explore how Bootstrap 5 utilities like flexbox and custom dark-theme CSS can transform a simple student project into a professional-looking platform like PolyTube.
-            </p>
-            <p>
-                Consistency is key. Whether you are styling placeholders to be white or ensuring your login buttons sit perfectly on the right side of the navbar, these small details define the overall quality of your work.
-            </p>
-        </div>
-        <div class="card border-0 shadow-sm mt-4">
-            <div class="card-body">
-                <h5 class="fw-bold mb-4"><i class="fa-solid fa-comments me-2 text-primary"></i>Comments</h5>
-
-                <div class="d-flex gap-3 mb-4">
-                    <img src="assets/images/Image_110120251030.webp" class="comment-avatar shadow-sm" alt="MyAvatar">
-                    <div class="flex-grow-1">
-                        <form action="comment-controller" method="post">
-                            <div class="input-group">
-                                <textarea class="form-control border-0 bg-light" rows="4" placeholder="Write a comment..." style="border-radius: 20px;"></textarea>
-                                <button class="btn btn-link text-primary" type="submit">
-                            <i class="fa-solid fa-paper-plane fs-5"></i>
-                        </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <hr class="text-muted opacity-25">
-
-                <div class="comment-list">
-
-                    <div class="d-flex gap-3 mb-3">
-                        <img src="https://ui-avatars.com/api/?name=User+One&background=random" class="comment-avatar" alt="UserAvatar">
-                        <div class="flex-grow-1">
-                            <div class="comment-bubble shadow-sm">
-                                <h6 class="mb-1 fw-bold small">User One</h6>
-                                <p class="mb-0 small">Great post, Toya! This Java Servlet explanation is really helpful for our upcoming Lab 3. Keep it up!</p>
-                            </div>
-                            <div class="mt-1 ms-2">
-                                <a href="#" class="comment-action">Like</a>
-                                <a href="#" class="comment-action">Reply</a>
-                                <span class="text-muted small">2 hours ago</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex gap-3 mb-3 ms-5">
-                        <img src="assets/images/Image_110120251030.webp" class="comment-avatar" alt="AdminAvatar">
-                        <div class="flex-grow-1">
-                            <div class="comment-bubble shadow-sm border-start border-primary border-4">
-                                <h6 class="mb-1 fw-bold small text-primary">Tấn Phát (Admin)</h6>
-                                <p class="mb-0 small">Thanks! I'll be posting the Filter source code tomorrow morning.</p>
-                            </div>
-                            <div class="mt-1 ms-2">
-                                <a href="#" class="comment-action">Like</a>
-                                <span class="text-muted small">Just now</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+    <nav class="navbar navbar-expand-sm py-2 navbar-light bg-white shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/fpt_Polytechnic_Logo.svg" alt="Logo" style="width: 100px;">
+            </a>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="index.html"><i class="fa-solid fa-house me-1"></i> Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#myBlogsModal">
+                            <i class="fa-solid fa-folder-open me-1"></i> My Blogs </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-danger fw-bold" href="login.html"><i class="fa-solid fa-power-off"></i>Logout</a></li>
+                </ul>
             </div>
         </div>
-        <a href="index.html" class="btn btn-outline-danger btn-sm rounded-pill px-4 btn-back">
-                &larr; Back to Home
-            </a>
-    </article>
+    </nav>
+    <hr class="nav-divider">
+
+    <div class="content-wrapper">
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <aside class="col-lg-3 mb-4">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body text-center">
+                            <img src="assets/images/Image_110120251030.webp" class="rounded-circle avatar-lg shadow-sm mb-3" alt="UserAvatar">
+                            <h3 class="fw-bold mb-0 text-warning">Tấn Phát</h3>
+                            <p class="text-muted small">@Administrator</p>
+                            <hr>
+                            <div class="text-start px-2 small">
+                                <p class="mb-2"><strong><i class="fa-solid fa-briefcase text-secondary me-2"></i>Job:</strong> IT Student</p>
+                                <p class="mb-2"><strong><i class="fa-solid fa-shield-halved text-secondary me-2"></i>Role:</strong> System Administrator</p>
+                                <hr>
+                                <div class="col-md-12 d-flex justify-content-center">
+                                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#profileSettingsModal">
+                                    <i class="fa-solid fa-user-gear me-1"></i> Change Profile
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <article class="col-lg-9">
+                    <div class="bg-white p-4 rounded-3 shadow-sm border">
+                        <img src="https://plus.unsplash.com/premium_photo-1664297989345-f4ff2063b212?..." class="featured-image shadow-sm" alt="Blog Header">
+
+                        <h1 class="blog-title mt-3">Exploring Java Servlet Filters</h1>
+                        <div class="blog-meta">
+                            <span>By <strong>Toya</strong></span> • <span>March 27, 2026</span>
+                        </div>
+
+                        <div class="blog-content">
+                            <p>Let's make something something so that something of something could be something at something</p>
+                        </div>
+
+                        <div class="card border-0 bg-light mt-4">
+                            <div class="card-body">
+                                <h5 class="fw-bold mb-4"><i class="fa-solid fa-comments me-2 text-primary"></i>Comments</h5>
+                                <div class="d-flex gap-3 mb-4">
+                                    <img src="assets/images/Image_110120251030.webp" class="rounded-circle shadow-sm" style="width: 45px; height: 45px; object-fit: cover;" alt="MyAvatar">
+                                    <div class="flex-grow-1">
+                                        <form action="comment-controller" method="post">
+                                            <div class="input-group">
+                                                <textarea class="form-control border-0 shadow-sm" rows="2" placeholder="Share your thoughts..." style="border-radius: 12px;"></textarea>
+                                                <button class="btn btn-primary ms-2 rounded-3 px-3" type="submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                                <hr class="text-muted opacity-25 mb-4">
+                                <div class="comment-list">
+                                    <div class="d-flex gap-3 mb-3">
+                                        <img src="https://ui-avatars.com/api/?name=User+One&background=random" class="rounded-circle shadow-sm" style="width: 45px; height: 45px;" alt="UserAvatar">
+                                        <div class="flex-grow-1">
+                                            <div class="bg-white p-2 px-3 rounded-3 shadow-sm d-inline-block">
+                                                <h6 class="mb-1 fw-bold small">User One</h6>
+                                                <p class="mb-0 small">Awsome! You've made a post. This really helps with my Java Filter Lab.</p>
+                                            </div>
+                                            <div class="mt-1 ms-2">
+                                                <a href="#" class="text-muted small fw-bold text-decoration-none me-3">Like</a>
+                                                <a href="#" class="text-muted small fw-bold text-decoration-none me-3">Reply</a>
+                                                <span class="text-muted small">2 hours ago</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3 mb-3 ms-5">
+                                        <img src="assets/images/Image_110120251030.webp" class="rounded-circle shadow-sm" style="width: 40px; height: 40px; object-fit: cover;" alt="AdminAvatar">
+                                        <div class="flex-grow-1">
+                                            <div class="bg-white p-2 px-3 rounded-3 shadow-sm border-start border-primary border-4 d-inline-block">
+                                                <h6 class="mb-1 fw-bold small text-primary">Tấn Phát (Admin)</h6>
+                                                <p class="mb-0 small">Thank you kind stranger! Good luck with your assignment!</p>
+                                            </div>
+                                            <div class="mt-1 ms-2">
+                                                <a href="#" class="text-muted small fw-bold text-decoration-none me-3">Like</a>
+                                                <span class="text-muted small">Just now</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="index.html" class="btn btn-outline-danger btn-sm rounded-pill px-4 mt-4">
+                        &larr; Back to Home
+                    </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-white text-center py-3 mt-5 bg-dark">
+        <small>&copy; 2026 Developed by <span class="text-warning fw-bold">Toya</span> | SOF308 Assignment</small>
+    </footer>
 </body>
 
 </html>

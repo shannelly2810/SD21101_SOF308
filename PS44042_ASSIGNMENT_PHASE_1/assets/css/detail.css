@@ -1,0 +1,81 @@
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .blog-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #333;
+        }
+        
+        .featured-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #444;
+        }
+        
+        .blog-title {
+            color: #e2791c;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        
+        .blog-meta {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 15px;
+        }
+        
+        .blog-content {
+            font-size: 1.1rem;
+            color: #636363;
+            text-align: justify;
+        }
+        
+        .btn-back {
+            margin-top: 30px;
+        }
+        
+        .comment-avatar {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+        
+        .comment-bubble {
+            background-color: #f0f2f5;
+            border-radius: 18px;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+        
+        .comment-action {
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: #65676b;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        
+        .comment-action:hover {
+            text-decoration: underline;
+        }

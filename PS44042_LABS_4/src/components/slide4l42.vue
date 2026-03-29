@@ -1,7 +1,7 @@
 <script setup>
 import {ref} from 'vue';
 const msg = ref('FPT PolyTechnic');
-const show = ref=(true);
+const show = ref(true);
 </script>
 <template>
     <div>

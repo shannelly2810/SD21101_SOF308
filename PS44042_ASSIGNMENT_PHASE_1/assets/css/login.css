@@ -1,0 +1,47 @@
+           :root {
+              --tangerine: #f17e45;
+              --gray: #dcdbdb;
+          }
+          
+          body,
+          input,
+          button,
+          select,
+          textarea,
+          .nav-link,
+          label {
+              font-family: var(--bs-font-monospace) !important;
+          }
+          
+           ::placeholder {
+              opacity: 0.4 !important;
+          }
+          
+          html,
+          body {
+              height: 100%;
+          }
+          
+          .custom-underline {
+              text-decoration: underline;
+              text-underline-offset: 12px;
+              text-decoration-thickness: 2px;
+          }
+          
+          .flex-wrapper {
+              display: flex;
+              flex-direction: column;
+              min-height: 100vh;
+              background-color: var(--gray-bg);
+          }
+          
+          .nav-tabs .nav-link:hover {
+              color: var(--tangerine);
+              border-color: transparent transparent var(--tangerine);
+          }
+          
+          .nav-tabs .nav-link:active {
+              color: #e67e22 !important;
+              border-bottom: 3px solid #e67e22 !important;
+              background: none;
+          }
