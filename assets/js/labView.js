@@ -36,12 +36,21 @@ const allLabs = {
         ]
     },
     'lab05': {
-        name: "Lab 04: A deep dive into VueJS fundamentals",
+        name: "Lab 05: Data Binding | Reactivity fundamentals in VueJS",
         exercises: [
             { id: 1, desc: "Event Handling and dynamic message updates using Vue's ref reactivity", url: "http://localhost:5174/", target: "#ex1" },
             { id: 2, desc: "Two-way Data Binding with v-model", url: "http://localhost:5174/", target: "#ex2" },
             { id: 3, desc: "Building a reactive Personal Information Form", url: "http://localhost:5174/", target: "#ex3" },
             { id: 4, desc: "Developing a Mini Blog Application", url: "http://localhost:5174/", target: "#ex4" }
+        ]
+    },
+    'lab06': {
+        name: "Lab 06: Mastering Conditions & Loops in VueJS",
+        exercises: [
+            { id: 1, desc: "Handling student Performance based on grades using v-if/v-if-else/v-else", url: "http://localhost:5173/", target: "#ex1" },
+            { id: 2, desc: "Handling season choices based on months using v-if/v-if-else/v-else", url: "http://localhost:5173/", target: "#ex2" },
+            { id: 3, desc: "Handling list view with v-for", url: "http://localhost:5173/", target: "#ex3" },
+            { id: 4, desc: "Student CRUD", url: "http://localhost:5173/", target: "#ex4" }
         ]
     }
 };

@@ -5,17 +5,27 @@ defineProps({
         type: Array,
         required: true,
     }
-})
+});
+const toggleDetails = (index) => {
+    posts[index].show = !posts[index].show;
+};
 </script>
 
 <template>
-    <h2>Blog list</h2>
-    <div v-for="(p, index) in posts" :key="index" :class="{ 'highlighted': p.title.length > 20 }"
-        :style="{ backgroundColor: p.backgroundColor, color: p.textColor }" class="posts">
-        <h3 class="text-success">{{ p.title }}</h3>
-        <h4 class="text-danger">{{ p.author }}</h4>
-        <p class="text-break">{{ p.content }}</p>
-    </div>
+            <h2 class="mb-4 text-primary">Newest Blogs</h2>
+            <ul class="list-group shadow-sm">
+                <li class="list-group-item" v-for="(post, index) in posts" :key="index">
+                    <h4>{{post.index}} - {{ post.title }} - {{ post.author }}</h4>
+
+                    <button @click="toggleDetails(index)" class="btn btn-info btn-sm">
+                        {{ post.show ? "Ẩn chi tiết" : "Xem chi tiết" }}
+                    </button>
+
+                    <p v-show="post.show" class="mt-2 p-2 border-start border-info bg-light">
+                        {{ post.content }}
+                    </p>
+                </li>
+            </ul>
 </template>
 
 <style scoped>
