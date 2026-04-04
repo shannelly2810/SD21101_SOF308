@@ -1,23 +1,21 @@
 <script setup>
 import { ref } from 'vue';
-import img1 from '../assets/images/1stArticle.jpg'; 
-import img2 from '../assets/images/2ndArticle.jpg';
-import img3 from '../assets/images/3rdArticle.jpg'; 
+//Instead of import every-single-image from the component - just add the images folder inside public and call it - no need importing files//
 const items = ref([
   { 
     title: '8 loại rau củ quả giàu canxi', 
     content: 'Canxi là khoáng chất cần thiết đối với cơ thể người...', 
-    image: img1
+    image: '/images/1stArticle.jpg'
   },
   { 
     title: 'Các loại gia vị tốt cho sức khỏe', 
     content: 'Một số loại gia vị cung cấp nhiều polyphenol chống oxy hóa...', 
-    image: img2
+    image: '/images/2ndArticle.jpg'
   },
   { 
     title: '9 loại đậu bổ dưỡng nên dùng nhiều', 
     content: 'Đậu lăng, đậu nành, đậu phộng giàu chất xơ và protein...', 
-    image: img3
+    image: '/images/3rdArticle.jpg'
   }
 ]);
 </script>

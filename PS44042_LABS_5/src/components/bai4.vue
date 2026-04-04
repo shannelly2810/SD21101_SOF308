@@ -33,17 +33,16 @@ const posts = reactive([
 // function addPost(post){                   -  When using ref
 //     posts.value.push(post)
 // }
-// function addPost(post){
-//     posts.push(post);
-//     posts.unshift(post);
-// }
-function addPost(post) {
-    posts.reverse();
-    posts.push(post);
+function addPost(post){
     const newPost = { ...post, show: false };
-    posts.reverse();
-
+    posts.unshift(post);
 }
+// function addPost(post) {
+//     posts.reverse();
+//     posts.push(post);
+//     const newPost = { ...post, show: false };
+//     posts.reverse();
+// }
 </script>
 
 <template>

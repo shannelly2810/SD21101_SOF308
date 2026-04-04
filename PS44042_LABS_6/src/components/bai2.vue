@@ -9,7 +9,7 @@ const checkSeason = () => {
   errorMessage.value = '';
   resultMonth.value = null;
   if (inputMonth.value === null || inputMonth.value < 1 || inputMonth.value > 12) {
-    errorMessage.value = "Invalid Input ! Try again ( 1(January) - 12(December) )";
+    errorMessage.value = "Invalid Input ! Try again ( 1 - 12 )";
   } else {
     resultMonth.value = inputMonth.value;
   } 
@@ -82,7 +82,7 @@ const checkMonth = () => {
 <template>
 <div class="container mt-3">
   <div class="card p-4 shadow-sm">
-    <h5 class="card-title text-primary">Check Season</h5>
+    <h5 class="card-title text-primary">Tìm kiếm mùa theo tháng</h5>
     
     <input 
       type="text" 

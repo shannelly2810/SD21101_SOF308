@@ -4,7 +4,7 @@ import Bai1 from './components/bai1.vue';
 import Bai2 from './components/bai2.vue';
 import Bai3 from './components/bai3.vue';
 import Bai4 from './components/bai4.vue';
-import slide6 from './components/slide6.vue';
+// import slide6 from './components/slide6.vue';
 const switchTabByHash = () => {
   const hash = window.location.hash;
   if (hash) {
@@ -31,7 +31,7 @@ onMounted(() => {
       <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#ex2">Bài 2</button></li>
       <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#ex3">Bài 3</button></li>
       <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#ex4">Bài 4</button></li>
-      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#slide6">Slide 6</button></li>
+      <!-- <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#slide6">Slide 6</button></li> -->
     </ul>
 
     <div class="tab-content border p-3">
@@ -47,9 +47,9 @@ onMounted(() => {
       <div class="tab-pane fade" id="ex4">
         <Bai4 />
       </div>
-      <div class="tab-pane fade" id="slide6">
+      <!-- <div class="tab-pane fade" id="slide6">
         <slide6 />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
