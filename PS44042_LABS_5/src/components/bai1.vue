@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue';
-const isChanged = ref(false);
-const message = ref('Thông điệp ban đầu');
 // const updateMessage = () => {
 //     message.value = 'Thông điệp đã được thay đổi!';
 // };
+const isChanged = ref(false);
+const message = ref('Thông điệp ban đầu');
 const toggleMessage = () => {
     isChanged.value = !isChanged.value;
 };

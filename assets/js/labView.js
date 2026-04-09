@@ -52,6 +52,15 @@ const allLabs = {
             { id: 3, desc: "Handling list view with v-for", url: "http://localhost:5173/", target: "#ex3" },
             { id: 4, desc: "Student CRUD", url: "http://localhost:5173/", target: "#ex4" }
         ]
+    },
+    'lab07': {
+        name: "Lab 07: Mastering the flow of data through event handling, form binding, and parent-child component communication",
+        exercises: [
+            { id: 1, desc: "Building a reactive task manager that captures input via @submit.prevent and modifies lists in real-time", url: "http://localhost:5173/", target: "#ex1" },
+            { id: 2, desc: "Implementing a secure login gateway using conditional rendering (v-if) and strict regex-based validation", url: "http://localhost:5173/", target: "#ex2" },
+            { id: 3, desc: "Creating a comprehensive registration form that utilizes complex two-way binding for radios, dates, and checkboxes", url: "http://localhost:5173/", target: "#ex3" },
+            { id: 4, desc: "Engineering a modular commenting system where independent components share user state via props and events", url: "http://localhost:5173/", target: "#ex4" }
+        ]
     }
 };
 
