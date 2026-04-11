@@ -82,7 +82,7 @@ function formatDate(dateStr) {
 
         <div class="col-md-8 px-4">
             <h2 class="text-danger mb-4">Danh Sách Học Sinh</h2>
-            <div class="table-responsive">
+            <div class="table-responsive">==
                 <table class="table table-hover align-middle">
                     <thead class="table-dark">
                         <tr>

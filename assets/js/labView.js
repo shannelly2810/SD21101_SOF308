@@ -61,6 +61,15 @@ const allLabs = {
             { id: 3, desc: "Creating a comprehensive registration form that utilizes complex two-way binding for radios, dates, and checkboxes", url: "http://localhost:5173/", target: "#ex3" },
             { id: 4, desc: "Engineering a modular commenting system where independent components share user state via props and events", url: "http://localhost:5173/", target: "#ex4" }
         ]
+    },
+    'lab08': {
+        name: "Lab 8: Making acquaintance with Vue Router",
+        exercises: [{
+            id: 1,
+            desc: "Setting up Vue Router and creating basic routes for Home, User and other pages",
+            url: "http://localhost:5173",
+            target: "#ex1"
+        }, ]
     }
 };
 
